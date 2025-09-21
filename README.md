@@ -7,16 +7,16 @@ A comprehensive RAG (Retrieval-Augmented Generation) pipeline with PDF processin
 
 ## Features
 
-✅ **Complete RAG Pipeline**: End-to-end retrieval-augmented generation system
-✅ **PDF Text Extraction**: Advanced PDF processing with multiple backends
-✅ **Intelligent Text Chunking**: Multiple chunking strategies (recursive, fixed, sentence-based)
-✅ **FAISS Vector Storage**: High-performance similarity search and storage
-✅ **LangChain Integration**: Seamless integration with LangChain ecosystem
-✅ **Hugging Face Tools**: Transformers, embeddings, and model integration
-✅ **Toxicity Filtering**: Automatic content filtering for safe AI applications
-✅ **Language Detection**: Multi-language support with automatic detection
-✅ **Flexible Configuration**: JSON-based configuration system
-✅ **Production Ready**: Comprehensive error handling and logging
+- ✅ **Complete RAG Pipeline**: End-to-end retrieval-augmented generation system
+- ✅ **PDF Text Extraction**: Advanced PDF processing with multiple backends
+- ✅ **Intelligent Text Chunking**: Multiple chunking strategies (recursive, fixed, sentence-based)
+- ✅ **FAISS Vector Storage**: High-performance similarity search and storage
+- ✅ **LangChain Integration**: Seamless integration with LangChain ecosystem
+- ✅ **Hugging Face Tools**: Transformers, embeddings, and model integration
+- ✅ **Toxicity Filtering**: Automatic content filtering for safe AI applications
+- ✅ **Language Detection**: Multi-language support with automatic detection
+- ✅ **Flexible Configuration**: JSON-based configuration system
+- ✅ **Production Ready**: Comprehensive error handling and logging
 
 ## Quick Start
 
