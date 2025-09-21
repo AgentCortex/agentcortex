@@ -2,6 +2,7 @@
 
 import logging
 from typing import List, Dict, Any, Optional
+from pydantic import Field
 
 try:
     from langchain.schema import Document
@@ -149,11 +150,14 @@ class FAISSVectorStore(VectorStore):
 class CustomRetriever(BaseRetriever):
     """Custom retriever using FAISSStorage."""
     
-    def __init__(self, faiss_storage, k: int = 4):
+    faiss_storage: Any = Field(...)
+    k: int = Field(default=4)
+    
+    model_config = {"arbitrary_types_allowed": True}
+    
+    def __init__(self, faiss_storage, k: int = 4, **kwargs):
         """Initialize retriever."""
-        super().__init__()
-        self.faiss_storage = faiss_storage
-        self.k = k
+        super().__init__(faiss_storage=faiss_storage, k=k, **kwargs)
     
     def _get_relevant_documents(
         self, 
